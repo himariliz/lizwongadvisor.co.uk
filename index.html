@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liz Wong MPA - FCA-regulated mortgage and protection advisor in the UK. Human-centered financial advice for home buyers and families. In a world full of AI, heart still wins over algorithm.">
+    <meta name="keywords" content="mortgage advisor UK, protection insurance, life insurance, first time buyer, immigrant mortgage advisor, FCA regulated, Buckinghamshire mortgage advisor">
+    <title>Liz Wong MPA | Mortgage & Protection Advisor | Heart Over Algorithm</title>
+    
+    <meta property="og:title" content="Liz Wong MPA - Mortgage & Protection Advisor">
+    <meta property="og:description" content="Human-centered mortgage and protection advice. In a world full of AI, heart still wins over algorithm.">
+    <meta property="og:type" content="website">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --bright-red: #C41E3A;
+            --coral: #FF6B7A;
+            --dark: #0a0a0a;
+            --gray: #666;
+            --light-gray: #f5f5f5;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+        }
+        
+        /* Navigation */
+        nav {
+            background: var(--dark);
+            padding: 1rem 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid var(--bright-red);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--bright-red);
+            text-decoration: none;
+        }
+        
+        .logo-nav-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid var(--bright-red);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--coral);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--dark) 0%, #1a1a1a 100%);
+            color: white;
+            padding: 4rem 5%;
+            text-align: center;
+            border-bottom: 4px solid var(--bright-red);
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid var(--bright-red);
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(196, 30, 58, 0.4);
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--bright-red);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: #ddd;
+            margin-bottom: 2rem;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        .tagline .heart {
+            color: var(--bright-red);
+            font-weight: bold;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--bright-red);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(196, 30, 58, 0.4);
+            background: #a01829;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 4rem 5%;
+            background: var(--light-gray);
+        }
+        
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: var(--bright-red);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--gray);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 4rem 5%;
+        }
+        
+        .services-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--bright-red);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(196, 30, 58, 0.2);
+        }
+        
+        .service-card h3 {
+            color: var(--bright-red);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .service-card p {
+            color: var(--gray);
+        }
+        
+        /* Fees Section */
+        .fees {
+            padding: 4rem 5%;
+            background: var(--light-gray);
+        }
+        
+        .fees-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .fee-table {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .fee-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .fee-item:last-child {
+            border-bottom: none;
+        }
+        
+        .fee-item strong {
+            color: var(--bright-red);
+        }
+        
+        /* Video Section */
+        .video-section {
+            padding: 4rem 5%;
+        }
+        
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .video-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-top: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 4rem 5%;
+            background: var(--light-gray);
+        }
+        
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        
+        .contact-item {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .contact-item h3 {
+            color: var(--bright-red);
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-item p {
+            color: var(--gray);
+        }
+        
+        .contact-item a {
+            color: var(--bright-red);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Risk Warning Box */
+        .risk-warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 900px;
+            border-radius: 5px;
+        }
+        
+        .risk-warning h4 {
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+        
+        .risk-warning p {
+            color: #856404;
+            font-size: 0.95rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 5%;
+            border-top: 4px solid var(--bright-red);
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            color: var(--bright-red);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: #ccc;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            color: var(--coral);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .regulatory-info {
+            border-top: 1px solid #444;
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #999;
+            line-height: 1.8;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .logo-nav {
+                font-size: 1.2rem;
+            }
+            
+            .logo-nav-img {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo-nav">
+                <img src="https://raw.githubusercontent.com/himariliz/lizwongadvisor.co.uk/main/Liz_Wong_MPA-removebg-preview.png" alt="Liz Wong MPA Logo" class="logo-nav-img">
+                <span>Liz Wong MPA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#fees">Fees</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="https://raw.githubusercontent.com/himariliz/lizwongadvisor.co.uk/main/Liz_Wong_MPA-removebg-preview.png" alt="Liz Wong MPA" class="profile-img">
+            <h1>Liz Wong</h1>
+            <p class="hero-subtitle">Mortgage & Protection Advisor</p>
+            <p class="tagline">In a World Full of AI,<br><span class="heart">Heart</span> Still Wins Over Algorithm</p>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">FCA-Regulated | Helping You Build a Life in the UK</p>
+            <a href="#contact" class="cta-button">Let's Talk About Your Future</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="section-title">My Story</h2>
+            <p>As an immigrant in the UK, I understand what it means to build a life in a new country—the uncertainty, the responsibility, and the "what if" fears that keep you up at night.</p>
+            
+            <p>With a background in education and experience as an FCA-regulated mortgage and protection adviser, I share heartfelt, clear explanations around mortgages, protection, and the human side of financial decisions—not just numbers or systems.</p>
+            
+            <p>Here, we talk about home, security, responsibility, and peace of mind, in a calm and honest way, before big life decisions are made. This is for education and understanding, helping you make informed choices about your financial future.</p>
+            
+            <p><strong>Because in a world increasingly driven by algorithms, the human touch—your story, your worries, your dreams—still matters most.</strong></p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-container">
+            <h2 class="section-title">How I Can Help You</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🏠 Residential Mortgages</h3>
+                    <p>First-time buyer? Moving home? Remortgaging? I'll guide you through the process with clarity and care, finding the right mortgage from over 110 lenders for your unique situation.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🛡️ Life Insurance</h3>
+                    <p>Protect the people who depend on you. Whole of market advice with non-loaded premiums to give you peace of mind without breaking the bank.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>💼 Income Protection</h3>
+                    <p>What happens if you can't work? Income protection ensures your bills get paid and your family stays secure, even when life throws curveballs.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🏥 Critical Illness Cover</h3>
+                    <p>A serious illness shouldn't mean financial stress too. This cover provides a lump sum to help you focus on recovery, not bills.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🏢 Business Protection</h3>
+                    <p>Protect your business from the financial impact of losing a key person. Ensure business continuity and protect your livelihood.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🌏 Support for Immigrants</h3>
+                    <p>As an immigrant myself, I understand your journey. Let me help you navigate UK financial services with someone who truly gets it.</p>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 2rem; color: var(--gray);">
+                <strong>Whole of Market Advice</strong> — I search over 110 lenders to find you the best deals, with access to exclusive rates you won't find on comparison sites.
+            </p>
+        </div>
+    </section>
+
+    <!-- Fees Section -->
+    <section class="fees" id="fees">
+        <div class="fees-container">
+            <h2 class="section-title">Transparent Fees</h2>
+            <p style="text-align: center; color: var(--gray); margin-bottom: 2rem;">
+                No hidden costs. Here's what you'll pay for my services:
+            </p>
+            
+            <div class="fee-table">
+                <h3 style="color: var(--bright-red); margin-bottom: 1rem;">Residential Mortgages</h3>
+                <div class="fee-item">
+                    <span>Research & DIP</span>
+                    <strong>£200 (on commitment)</strong>
+                </div>
+                <div class="fee-item">
+                    <span>Application Processing</span>
+                    <strong>£295 (on application)</strong>
+                </div>
+                <div class="fee-item">
+                    <span>Through to Offer</span>
+                    <strong>£0 (on offer)</strong>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--gray);">
+                    Fees exclude VAT where applicable. Non-standard cases (adverse credit, debt consolidation, interest-only, ex-pat) may incur an additional fee of up to £200.
+                </p>
+            </div>
+            
+            <div class="fee-table" style="margin-top: 1.5rem;">
+                <h3 style="color: var(--bright-red); margin-bottom: 1rem;">Protection Insurance</h3>
+                <div class="fee-item">
+                    <span>Life Insurance, Income Protection, Critical Illness</span>
+                    <strong>No upfront fee</strong>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--gray);">
+                    I receive commission from the insurance company. This will be disclosed in your illustration. Whole of market advice with non-loaded premiums.
+                </p>
+            </div>
+            
+            <p style="text-align: center; margin-top: 2rem; color: var(--gray); font-weight: 500;">
+                All fees are non-refundable. You may also benefit from lender procuration fees which won't be offset against advisor fees.
+            </p>
+        </div>
+    </section>
+
+    <!-- Risk Warning -->
+    <div class="risk-warning">
+        <h4>⚠️ Important Information</h4>
+        <p><strong>Your home may be at risk if you fail to keep up payments on your mortgage or any other loans secured against it.</strong></p>
+        <p style="margin-top: 0.5rem;">This website is for education and understanding only. It does not provide personalized financial advice or product recommendations. Always seek regulated advice for your specific circumstances.</p>
+    </div>
+
+    <!-- Video Section -->
+    <section class="video-section" id="videos">
+        <div class="video-container">
+            <h2 class="section-title">Watch My YouTube Channel</h2>
+            <p style="text-align: center; color: var(--gray); margin-bottom: 1rem;">
+                Join me as I break down mortgages, protection, and financial decisions in a way that actually makes sense—with heart, not jargon.
+            </p>
+            <div class="video-embed">
+                <iframe 
+                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                    title="Liz Wong MPA YouTube Channel" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p style="text-align: center; margin-top: 1.5rem;">
+                <a href="https://www.youtube.com/@LizWongMPA" target="_blank" style="color: var(--bright-red); font-weight: bold; text-decoration: none; font-size: 1.1rem;">
+                    Subscribe to My Channel →
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Let's Start a Conversation</h2>
+            <p style="color: var(--gray); font-size: 1.1rem; margin-bottom: 2rem;">
+                Ready to talk about your mortgage or protection needs? I'm here to help, whether you're just starting to explore options or ready to move forward.
+            </p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:liz.wong@protectandlend.co.uk">liz.wong@protectandlend.co.uk</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>📱 Phone</h3>
+                    <p><a href="tel:+447561155098">07561 155098</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>Buckinghamshire & UK-wide</p>
+                </div>
+            </div>
+            
+            <a href="mailto:liz.wong@protectandlend.co.uk" class="cta-button" style="margin-top: 2rem;">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Liz Wong MPA</h4>
+                    <p>Bringing the human touch to mortgages and protection. Because your story matters more than any algorithm.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#fees">Fees</a></li>
+                        <li><a href="#videos">YouTube Channel</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="complaints.html">Complaints Procedure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.youtube.com/@LizWongMPA" target="_blank">YouTube</a></li>
+                        <li><a href="mailto:liz.wong@protectandlend.co.uk">Email Me</a></li>
+                        <li><a href="tel:+447561155098">Call Me</a></li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        <strong>Office Address:</strong><br>
+                        Garfield House<br>
+                        165-167 High St<br>
+                        Rayleigh, Essex<br>
+                        SS6 7QA
+                    </p>
+                </div>
+            </div>
+            
+            <div class="regulatory-info">
+                <p><strong>Regulatory Information</strong></p>
+                <p>Liz Wong MPA trades under Protect and Lend Ltd, an Appointed Representative of New Leaf Distribution Ltd which is authorised and regulated by the Financial Conduct Authority: FCA Number 460421</p>
+                <p style="margin-top: 1rem;"><strong>Important Risk Warning:</strong> Your home may be at risk if you fail to keep up payments on your mortgage or any other loans secured against it.</p>
+                <p style="margin-top: 0.5rem;">Our services relate to certain investments whose prices are dependent on fluctuations in the financial markets beyond our control. Investments and the income from them may go down as well as up and you may get back less than the amount invested.</p>
+                <p style="margin-top: 1rem;">© 2024 Liz Wong MPA. All rights reserved. | Website for education and information only—not personalized financial advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if (!localStorage.getItem('cookieConsent')) {
+            setTimeout(() => {
+                if (confirm('This website uses cookies to ensure you get the best experience. Do you accept?')) {
+                    localStorage.setItem('cookieConsent', 'true');
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
