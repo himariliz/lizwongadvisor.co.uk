@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Liz Wong MPA - FCA-regulated mortgage and protection advisor in the UK. Human-centered financial advice for home buyers and families. In a world full of AI, heart still wins over algorithm.">
-    <meta name="keywords" content="mortgage advisor UK, protection insurance, life insurance, first time buyer, immigrant mortgage advisor, FCA regulated, Buckinghamshire mortgage advisor">
+    <meta name="description" content="Liz Wong MPA - FCA-regulated mortgage and protection advisor in Milton Keynes. From immigrant to entrepreneur, helping you build your life in the UK with heart and expertise.">
+    <meta name="keywords" content="mortgage advisor Milton Keynes, protection insurance, life insurance, first time buyer, immigrant mortgage advisor, FCA regulated, Buckinghamshire mortgage advisor">
     <title>Liz Wong MPA | Mortgage & Protection Advisor | Heart Over Algorithm</title>
     
     <meta property="og:title" content="Liz Wong MPA - Mortgage & Protection Advisor">
-    <meta property="og:description" content="Human-centered mortgage and protection advice. In a world full of AI, heart still wins over algorithm.">
+    <meta property="og:description" content="From immigrant to entrepreneur - helping you build your life in the UK. Human-centered mortgage and protection advice.">
     <meta property="og:type" content="website">
     
     <style>
@@ -55,15 +55,15 @@
             display: flex;
             align-items: center;
             gap: 0.75rem;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: bold;
             color: var(--bright-red);
             text-decoration: none;
         }
         
         .logo-nav-img {
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             border: 2px solid var(--bright-red);
         }
@@ -79,6 +79,7 @@
             color: white;
             font-weight: 500;
             transition: color 0.3s;
+            font-size: 0.95rem;
         }
         
         .nav-links a:hover {
@@ -89,7 +90,7 @@
         .hero {
             background: linear-gradient(135deg, var(--dark) 0%, #1a1a1a 100%);
             color: white;
-            padding: 4rem 5%;
+            padding: 3.5rem 5% 3rem;
             text-align: center;
             border-bottom: 4px solid var(--bright-red);
         }
@@ -100,8 +101,8 @@
         }
         
         .profile-img {
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
             border: 5px solid var(--bright-red);
             margin-bottom: 1.5rem;
@@ -110,22 +111,22 @@
         }
         
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 0.5rem;
             color: var(--bright-red);
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
         .hero-subtitle {
-            font-size: 2rem;
+            font-size: 1.6rem;
             color: #ddd;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
         }
         
         .tagline {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 300;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             font-style: italic;
         }
         
@@ -159,7 +160,7 @@
         }
         
         .about-content {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
         }
         
@@ -170,10 +171,24 @@
             text-align: center;
         }
         
+        .story-highlight {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--bright-red);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
         .about p {
             font-size: 1.1rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.3rem;
             color: var(--gray);
+            line-height: 1.8;
+        }
+        
+        .about strong {
+            color: var(--dark);
+            font-size: 1.2rem;
         }
         
         /* Services Section */
@@ -188,14 +203,14 @@
         
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
             margin-top: 2rem;
         }
         
         .service-card {
             background: white;
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s, box-shadow 0.3s;
@@ -209,12 +224,14 @@
         
         .service-card h3 {
             color: var(--bright-red);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
         }
         
         .service-card p {
             color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
         }
         
         /* Fees Section */
@@ -259,24 +276,6 @@
         .video-container {
             max-width: 900px;
             margin: 0 auto;
-        }
-        
-        .video-embed {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin-top: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        
-        .video-embed iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
         }
         
         /* Contact Section */
@@ -397,37 +396,71 @@
             line-height: 1.8;
         }
         
-        /* Responsive */
+        /* Responsive - Mobile */
         @media (max-width: 768px) {
-            .nav-links {
-                gap: 1rem;
-                font-size: 0.9rem;
-            }
-            
             .logo-nav {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+                gap: 0.5rem;
             }
             
             .logo-nav-img {
-                width: 40px;
-                height: 40px;
+                width: 38px;
+                height: 38px;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+            
+            .hero {
+                padding: 2.5rem 5%;
+            }
+            
+            .profile-img {
+                width: 130px;
+                height: 130px;
             }
             
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .hero-subtitle {
-                font-size: 1.1rem;
+                font-size: 1.3rem;
             }
             
             .tagline {
+                font-size: 1.4rem;
+            }
+            
+            .story-highlight {
                 font-size: 1.2rem;
             }
             
             .contact-info {
                 flex-direction: column;
                 gap: 1.5rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Responsive - Desktop */
+        @media (min-width: 1200px) {
+            .logo-nav {
+                font-size: 1.6rem;
+            }
+            
+            .logo-nav-img {
+                width: 55px;
+                height: 55px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
             }
         }
     </style>
@@ -457,7 +490,7 @@
             <h1>Liz Wong</h1>
             <p class="hero-subtitle"><span style="color: #C41E3A;">M</span>ortgage & <span style="color: #C41E3A;">P</span>rotection <span style="color: #C41E3A;">A</span>dvisor</p>
             <p class="tagline">In a World Full of AI,<br><span class="heart">Heart</span> Still Wins Over Algorithm</p>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem;">FCA-Regulated | Helping You Build a Life in the UK</p>
+            <p style="font-size: 1rem; margin-bottom: 2rem; color: #ccc;">FCA-Regulated | Helping You Build a Life in the UK</p>
             <a href="#contact" class="cta-button">Let's Talk About Your Future</a>
         </div>
     </section>
@@ -466,13 +499,17 @@
     <section class="about" id="about">
         <div class="about-content">
             <h2 class="section-title">My Story</h2>
-            <p>As an immigrant in the UK, I understand what it means to build a life in a new country—the uncertainty, the responsibility, and the "what if" fears that keep you up at night.</p>
+            <p class="story-highlight">From Immigrant to Entrepreneur: Building Lives, Not Just Loans</p>
             
-            <p>With a background in education and experience as an FCA-regulated mortgage and protection adviser, I share heartfelt, clear explanations around mortgages, protection, and the human side of financial decisions—not just numbers or systems.</p>
+            <p>I came to the UK with a dream to build a better life for my family and built it from the ground up. As a business owner and educator, I know what it takes to succeed in a new country—the resilience, the sleepless nights, the leap of faith.</p>
             
-            <p>Here, we talk about home, security, responsibility, and peace of mind, in a calm and honest way, before big life decisions are made. This is for education and understanding, helping you make informed choices about your financial future.</p>
+            <p>Now, as an FCA-regulated mortgage and protection adviser, I bring that same determination to helping <strong>YOU</strong> build your life here. Whether you're buying your first home or protecting your family's future, I understand the weight of these decisions because I've made them too.</p>
             
-            <p><strong>Because in a world increasingly driven by algorithms, the human touch—your story, your worries, your dreams—still matters most.</strong></p>
+            <p>I'm not here to sell you products. I'm here to give you clarity, confidence, and a plan that actually fits YOUR life—not a spreadsheet.</p>
+            
+            <p><strong>Strong. Strategic. Human.</strong></p>
+            
+            <p>Because in a world full of algorithms, your story deserves someone who truly gets it.</p>
         </div>
     </section>
 
@@ -483,61 +520,65 @@
             <div class="services-grid">
                 <div class="service-card">
                     <h3>🏠 Residential Mortgages</h3>
-                    <p>First-time buyer? Moving home? Remortgaging? I'll guide you through the process with clarity and care, finding the right mortgage from over 110 lenders for your unique situation.</p>
+                    <p>First home or forever home—I'll find the right mortgage from 110+ lenders for your unique situation.</p>
                 </div>
-
-<div class="service-card">
+                
+                <div class="service-card">
                     <h3>🏢 Buy to Let Mortgages</h3>
-                    <p>Building a property portfolio? I'll help you find the right buy-to-let mortgage for your investment strategy, with access to specialist lenders and competitive rates.</p>
+                    <p>Building a property portfolio? Access specialist lenders and competitive rates for your investment strategy.</p>
                 </div>
                 
                 <div class="service-card">
                     <h3>🏗️ Commercial Mortgages</h3>
-                    <p>Financing for business premises, investment properties, or development projects. Expert advice on commercial lending tailored to your business needs.</p>
+                    <p>Financing for business premises or development projects—expert advice tailored to your business needs.</p>
                 </div>
                 
                 <div class="service-card">
                     <h3>🛡️ Life Insurance</h3>
-                    <p>Protect the people who depend on you. Whole of market advice with non-loaded premiums to give you peace of mind without breaking the bank.</p>
+                    <p>Protect the people who depend on you. Whole of market advice with non-loaded premiums.</p>
                 </div>
                 
                 <div class="service-card">
                     <h3>💼 Income Protection</h3>
-                    <p>What happens if you can't work? Income protection ensures your bills get paid and your family stays secure, even when life throws curveballs.</p>
+                    <p>What happens if you can't work? Ensure your bills get paid and your family stays secure.</p>
                 </div>
                 
                 <div class="service-card">
                     <h3>🏥 Critical Illness Cover</h3>
-                    <p>A serious illness shouldn't mean financial stress too. This cover provides a lump sum to help you focus on recovery, not bills.</p>
+                    <p>A serious illness shouldn't mean financial stress. Get a lump sum to focus on recovery, not bills.</p>
                 </div>
                 
                 <div class="service-card">
-                    <h3>🏢 Business Protection</h3>
-                    <p>Protect your business from the financial impact of losing a key person. Ensure business continuity and protect your livelihood.</p>
-                </div>
-                                          
-            <div class="service-card">
                     <h3>💎 Whole of Life Insurance</h3>
-                    <p>Provide lifelong protection for your loved ones. Unlike term insurance, whole of life cover guarantees a payout whenever you pass away, ensuring your family is always protected and giving you true peace of mind.</p>
+                    <p>Lifelong protection for your loved ones—guaranteeing a payout whenever you pass away.</p>
                 </div>
                 
                 <div class="service-card">
                     <h3>🏥 Private Medical Insurance</h3>
-                    <p>Access private healthcare when you need it most. Skip NHS waiting lists and get fast access to specialists, diagnostic tests, and treatment, so you can focus on your health and recovery.</p>
+                    <p>Skip NHS waiting lists. Fast access to specialists and treatment when you need it most.</p>
                 </div>
-                                
-<p class="whole-market">
-  <strong>Whole of Market Advice</strong> — I search over 110 lenders to find you the best deals, with access to exclusive rates you won't find on comparison sites.
-  <br><br>
-  As an immigrant myself, I understand your journey. Let me help you navigate UK financial services with someone who truly gets it.
-</p>
-
- <div style="background: #fff3cd; padding: 1.5rem; border-left: 4px solid #ffc107; border-radius: 5px; margin-top: 2rem;">
+                
+                <div class="service-card">
+                    <h3>🏢 Business Protection</h3>
+                    <p>Protect your business from losing a key person. Ensure business continuity and secure your livelihood.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🌏 Support for Immigrants</h3>
+                    <p>As an immigrant myself, I get your journey. Navigate UK financial services with someone who truly understands.</p>
+                </div>
+            </div>
+            
+            <div style="background: #fff3cd; padding: 1.5rem; border-left: 4px solid #ffc107; border-radius: 5px; margin-top: 2rem;">
                 <p style="color: #856404; font-size: 0.95rem; margin: 0;">
                     <strong>Please note:</strong> Buy to Let mortgages and Commercial Lending are not usually regulated by the Financial Conduct Authority.
                 </p>
-            </div> 
+            </div>
             
+            <p style="text-align: center; margin-top: 2rem; color: var(--gray);">
+                <strong>Whole of Market Advice</strong> — I search over 110 lenders to find you the best deals, with access to exclusive rates you won't find on comparison sites.
+            </p>
+        </div>
     </section>
 
     <!-- Fees Section -->
@@ -545,7 +586,7 @@
         <div class="fees-container">
             <h2 class="section-title">Transparent Fees</h2>
             <p style="text-align: center; color: var(--gray); margin-bottom: 2rem;">
-                No hidden costs. Here's what you'll pay for my services:
+                No hidden costs. Here's what you'll pay:
             </p>
             
             <div class="fee-table">
@@ -563,23 +604,23 @@
                     <strong>£0 (on offer)</strong>
                 </div>
                 <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--gray);">
-                    Fees exclude VAT where applicable. Non-standard cases (adverse credit, debt consolidation, interest-only, ex-pat) will incur an additional fee depending on the complexity.
+                    Fees exclude VAT where applicable. Non-standard cases will incur an additional fee depending on the case complexity.
                 </p>
             </div>
             
             <div class="fee-table" style="margin-top: 1.5rem;">
-    <h3 style="color: var(--bright-red); margin-bottom: 1rem;">Protection Insurance</h3>
-    <div class="fee-item">
-        <span>All Protection Insurance Products</span>
-        <strong>No upfront fee</strong>
-    </div>
-    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--gray);">
-        I receive commission from the insurance company. This will be disclosed in your illustration. Whole of market advice with non-loaded premiums.
-    </p>
-</div>
+                <h3 style="color: var(--bright-red); margin-bottom: 1rem;">Protection Insurance</h3>
+                <div class="fee-item">
+                    <span>All Protection Insurance Products</span>
+                    <strong>No upfront fee</strong>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--gray);">
+                    I receive commission from the insurance company. This will be disclosed in your illustration. Whole of market advice with non-loaded premiums.
+                </p>
+            </div>
             
             <p style="text-align: center; margin-top: 2rem; color: var(--gray); font-weight: 500;">
-                All fees are non-refundable.
+                All fees are non-refundable. Lenders may offer you cashback or incentives. These are separate benefits that don't affect my fees.
             </p>
         </div>
     </section>
@@ -596,25 +637,20 @@
         <div class="video-container">
             <h2 class="section-title">Watch My YouTube Channel</h2>
             <p style="text-align: center; color: var(--gray); margin-bottom: 1rem;">
-                Join me as I break down mortgages and protection in a way that actually makes sense—with heart and clarity, not jargon.
+                Breaking down mortgages and protection in a way that actually makes sense—with heart, not jargon.
             </p>
-          <div style="text-align: center; padding: 3rem; background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-    <p style="font-size: 1.3rem; margin-bottom: 1.5rem; color: #666; line-height: 1.8;">
-        🎬 <strong>Coming Soon!</strong><br>
-        I'm building a library of helpful videos about mortgages, protection insurance, and financial planning—with heart, not jargon.
-    </p>
-    <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #999;">
-        Subscribe now so you don't miss out when I start publishing!
-    </p>
-    <a href="https://www.youtube.com/@LizWongMPA" target="_blank" class="cta-button">
-        Subscribe to My YouTube Channel
-    </a>
-</div>
-            <p style="text-align: center; margin-top: 1.5rem;">
-                <a href="https://www.youtube.com/@LizWongMPA" target="_blank" style="color: var(--bright-red); font-weight: bold; text-decoration: none; font-size: 1.1rem;">
-                    Subscribe to My Channel →
+            <div style="text-align: center; padding: 3rem; background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <p style="font-size: 1.3rem; margin-bottom: 1.5rem; color: #666; line-height: 1.8;">
+                    🎬 <strong>Coming Soon!</strong><br>
+                    I'm building a library of helpful videos about mortgages, protection insurance, and financial planning.
+                </p>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #999;">
+                    Subscribe now so you don't miss out when I start publishing!
+                </p>
+                <a href="https://www.youtube.com/@LizWongMPA" target="_blank" class="cta-button">
+                    Subscribe to My YouTube Channel
                 </a>
-            </p>
+            </div>
         </div>
     </section>
 
@@ -623,7 +659,7 @@
         <div class="contact-container">
             <h2 class="section-title">Let's Start a Conversation</h2>
             <p style="color: var(--gray); font-size: 1.1rem; margin-bottom: 2rem;">
-                Ready to talk about your mortgage or protection needs? I'm here to help, whether you're just starting to explore options or ready to move forward.
+                Ready to talk about your mortgage or protection needs? I'm here to help.
             </p>
             
             <div class="contact-info">
@@ -639,7 +675,7 @@
                 
                 <div class="contact-item">
                     <h3>📍 Location</h3>
-                    <p>Based in Milton Keynes | Serving Buckinghamshire & UK-wide</p>
+                    <p>Milton Keynes, Buckinghamshire & UK-wide</p>
                 </div>
             </div>
             
