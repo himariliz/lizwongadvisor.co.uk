@@ -45,7 +45,7 @@
     <meta property="twitter:description" content="FCA-regulated mortgage and protection advisor. Heart over algorithm. Educational content and whole of market advice.">
     <meta property="twitter:image" content="https://lizwong.co.uk/android-chrome-512x512.png">
     
-    <!-- Schema.org Structured Data - Financial Advisor with Educational Content -->
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -89,7 +89,8 @@
           "priceRange": "££",
           "openingHours": "Mo-Fr 09:00-18:00",
           "sameAs": [
-            "https://www.youtube.com/@LizWongMPA"
+            "https://www.youtube.com/@LizWongMPA",
+            "https://www.youtube.com/@LizWongMPA%E8%8B%B1%E5%9C%8B%E6%8C%89%E6%8F%AD%E4%BF%9D%E9%9A%AA"
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
@@ -143,16 +144,17 @@
           "@id": "https://lizwong.co.uk/#education",
           "name": "Educational Content by Liz Wong MPA",
           "alternateName": "Liz Wong Mortgage & Protection Education",
-          "description": "Educational content about mortgages and protection for people building a life in the UK. Understanding financial decisions with heart over algorithm.",
+          "description": "Bilingual educational content about mortgages and protection for people building a life in the UK. Understanding financial decisions with heart over algorithm.",
           "url": "https://lizwong.co.uk",
           "founder": {
             "@type": "Person",
             "name": "Liz Wong",
             "jobTitle": "Mortgage & Protection Advisor and Educator",
-            "description": "FCA-regulated mortgage advisor providing educational content alongside professional advisory services"
+            "description": "FCA-regulated mortgage advisor providing bilingual educational content alongside professional advisory services"
           },
           "sameAs": [
-            "https://www.youtube.com/@LizWongMPA"
+            "https://www.youtube.com/@LizWongMPA",
+            "https://www.youtube.com/@LizWongMPA%E8%8B%B1%E5%9C%8B%E6%8C%89%E6%8F%AD%E4%BF%9D%E9%9A%AA"
           ]
         },
         {
@@ -162,7 +164,7 @@
           "givenName": "Liz",
           "familyName": "Wong",
           "jobTitle": "Mortgage & Protection Advisor | Educator",
-          "description": "FCA-regulated mortgage advisor and educator helping people understand mortgages and protection with heart over algorithm. CeMAP and CPSP qualified.",
+          "description": "FCA-regulated mortgage advisor and bilingual educator helping people understand mortgages and protection with heart over algorithm. CeMAP and CPSP qualified.",
           "url": "https://lizwong.co.uk",
           "image": "https://lizwong.co.uk/Liz_Wong_MPA-removebg-preview.png",
           "telephone": "+447561155098",
@@ -174,7 +176,8 @@
             "addressCountry": "GB"
           },
           "sameAs": [
-            "https://www.youtube.com/@LizWongMPA"
+            "https://www.youtube.com/@LizWongMPA",
+            "https://www.youtube.com/@LizWongMPA%E8%8B%B1%E5%9C%8B%E6%8C%89%E6%8F%AD%E4%BF%9D%E9%9A%AA"
           ],
           "knowsAbout": [
             "Mortgage Advice",
@@ -186,6 +189,13 @@
             "Buy to Let Mortgages",
             "Commercial Mortgages"
           ],
+          "knowsLanguage": [
+            "en-GB",
+            "zh-Hant",
+            "zh-Hans",
+            "yue",
+            "ja"
+          ],
           "alumniOf": {
             "@type": "EducationalOrganization",
             "name": "CeMAP Qualified"
@@ -196,11 +206,11 @@
           "@id": "https://lizwong.co.uk/#website",
           "url": "https://lizwong.co.uk",
           "name": "Liz Wong MPA | Mortgage & Protection Advisor",
-          "description": "FCA-regulated mortgage and protection advisory services with educational content",
+          "description": "FCA-regulated mortgage and protection advisory services with bilingual educational content",
           "publisher": {
             "@id": "https://lizwong.co.uk/#liz"
           },
-          "inLanguage": "en-GB"
+          "inLanguage": ["en-GB", "zh-Hant", "zh-Hans"]
         }
       ]
     }
@@ -469,8 +479,77 @@
         }
         
         .video-container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
+        }
+        
+        .channels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .channel-card {
+            background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%);
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--bright-red);
+        }
+        
+        .channel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(196, 30, 58, 0.2);
+        }
+        
+        .channel-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .channel-icon {
+            font-size: 2.5rem;
+        }
+        
+        .channel-title {
+            font-size: 1.4rem;
+            color: var(--bright-red);
+            margin: 0;
+        }
+        
+        .channel-lang {
+            font-size: 1.1rem;
+            color: var(--gray);
+            margin: 0;
+        }
+        
+        .channel-description {
+            font-size: 1rem;
+            color: var(--gray);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .channel-cta {
+            display: inline-block;
+            background: var(--bright-red);
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .channel-cta:hover {
+            background: #a01829;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(196, 30, 58, 0.3);
         }
         
         /* Contact Section */
@@ -611,6 +690,10 @@
                 gap: 0.6rem;
                 font-size: 0.75rem;
             }
+            
+            .channels-grid {
+                grid-template-columns: 1fr;
+            }
         }
         
         /* Extra small screens */
@@ -716,7 +799,7 @@
         </div>
     </section>
 
-   <!-- About Section -->
+    <!-- About Section -->
     <section class="about" id="about">
         <div class="about-content">
             <h2 class="section-title">My Story</h2>
@@ -783,7 +866,6 @@
                     <h3>🏢 Business Protection</h3>
                     <p>Protect your business from losing a key person. Ensure business continuity and secure your livelihood.</p>
                 </div>
-                
             </div>
             
             <div style="background: #fff3cd; padding: 1.5rem; border-left: 4px solid #ffc107; border-radius: 5px; margin-top: 2rem;">
@@ -888,22 +970,51 @@
     <!-- Video Section -->
     <section class="video-section" id="videos">
         <div class="video-container">
-            <h2 class="section-title">Watch My YouTube Channel</h2>
-            <p style="text-align: center; color: var(--gray); margin-bottom: 1rem;">
+            <h2 class="section-title">Watch My YouTube Channels</h2>
+            <p style="text-align: center; color: var(--gray); margin-bottom: 1rem; font-size: 1.1rem;">
                 Breaking down mortgages and protection in a way that actually makes sense—with heart, not jargon.
             </p>
-            <div style="text-align: center; padding: 3rem; background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                <p style="font-size: 1.3rem; margin-bottom: 1.5rem; color: #666; line-height: 1.8;">
-                    🎬 <strong>Coming Soon!</strong><br>
-                    I'm building a library of heart-led stories and helpful videos about mortgages, protection insurance, and financial knowledge in the UK here.
-                </p>
-                <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #999;">
-                    Subscribe now so you don't miss out when I start publishing!
-                </p>
-                <a href="https://www.youtube.com/@LizWongMPA" target="_blank" rel="noopener noreferrer" class="cta-button">
-                    Subscribe to My YouTube Channel
-                </a>
+            
+            <div class="channels-grid">
+                <!-- English Channel -->
+                <div class="channel-card">
+                    <div class="channel-header">
+                        <span class="channel-icon">🇬🇧</span>
+                        <div>
+                            <h3 class="channel-title">English Channel</h3>
+                            <p class="channel-lang">For UK-wide Audience</p>
+                        </div>
+                    </div>
+                    <p class="channel-description">
+                        Heart-led stories and helpful advice about UK mortgages and protection insurance. Understanding your financial journey with empathy and expertise.
+                    </p>
+                    <a href="https://www.youtube.com/@LizWongMPA" target="_blank" rel="noopener noreferrer" class="channel-cta">
+                        Subscribe to English Channel →
+                    </a>
+                </div>
+                
+                <!-- Chinese Channel -->
+                <div class="channel-card">
+                    <div class="channel-header">
+                        <span class="channel-icon">🇭🇰🇹🇼</span>
+                        <div>
+                            <h3 class="channel-title">中文頻道 Chinese Channel</h3>
+                            <p class="channel-lang">粵語 | 國語 (Cantonese | Mandarin)</p>
+                        </div>
+                    </div>
+                    <p class="channel-description">
+                        專為香港、台灣及華語社區提供英國按揭及保險知識。用心分享，助您在英國安居樂業。<br>
+                        <em style="font-size: 0.9rem;">Mortgage and protection guidance for Hong Kong, Taiwan & Chinese-speaking communities in the UK.</em>
+                    </p>
+                    <a href="https://www.youtube.com/@LizWongMPA%E8%8B%B1%E5%9C%8B%E6%8C%89%E6%8F%AD%E4%BF%9D%E9%9A%AA" target="_blank" rel="noopener noreferrer" class="channel-cta">
+                        訂閱中文頻道 Subscribe →
+                    </a>
+                </div>
             </div>
+            
+            <p style="text-align: center; margin-top: 2.5rem; color: var(--gray); font-size: 1rem;">
+                📺 New videos coming soon! Subscribe to stay updated with practical advice and real stories.
+            </p>
         </div>
     </section>
 
@@ -918,7 +1029,7 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <h3>📧 Email</h3>
-                    <p><a href="/cdn-cgi/l/email-protection#d0bcb9aafea7bfbeb790a0a2bfa4b5b3a4b1beb4bcb5beb4feb3bffea5bb"><span class="__cf_email__" data-cfemail="65090c1f4b120a0b022515170a11000611040b0109000b014b060a4b100e">[email&#160;protected]</span></a></p>
+                    <p><a href="mailto:liz.wong@protectandlend.co.uk">liz.wong@protectandlend.co.uk</a></p>
                 </div>
                 
                 <div class="contact-item">
@@ -933,7 +1044,7 @@
                 </div>
             </div>
             
-            <a href="/cdn-cgi/l/email-protection#48242132663f27262f08383a273c2d2b3c29262c242d262c662b27663d23" class="cta-button" style="margin-top: 2rem;">Get in Touch</a>
+            <a href="mailto:liz.wong@protectandlend.co.uk" class="cta-button" style="margin-top: 2rem;">Get in Touch</a>
         </div>
     </section>
 
@@ -953,7 +1064,7 @@
                         <li><a href="#about">About Me</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#fees">Fees</a></li>
-                        <li><a href="#videos">YouTube Channel</a></li>
+                        <li><a href="#videos">YouTube Channels</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="complaints.html">Complaints Procedure</a></li>
@@ -963,8 +1074,9 @@
                 <div class="footer-section">
                     <h4>Connect</h4>
                     <ul class="footer-links">
-                        <li><a href="https://www.youtube.com/@LizWongMPA" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                        <li><a href="/cdn-cgi/l/email-protection#1a767360346d75747d5a6a68756e7f796e7b747e767f747e347975346f71">Email Me</a></li>
+                        <li><a href="https://www.youtube.com/@LizWongMPA" target="_blank" rel="noopener noreferrer">YouTube (English)</a></li>
+                        <li><a href="https://www.youtube.com/@LizWongMPA%E8%8B%B1%E5%9C%8B%E6%8C%89%E6%8F%AD%E4%BF%9D%E9%9A%AA" target="_blank" rel="noopener noreferrer">YouTube (中文)</a></li>
+                        <li><a href="mailto:liz.wong@protectandlend.co.uk">Email Me</a></li>
                         <li><a href="tel:+447561155098">Call Me</a></li>
                     </ul>
                     <p style="margin-top: 1rem;">
@@ -980,4 +1092,10 @@
             <div class="regulatory-info">
                 <p><strong>Regulatory Information</strong></p>
                 <p>Liz Wong MPA trades under Protect and Lend Ltd, an Appointed Representative of New Leaf Distribution Ltd which is authorised and regulated by the Financial Conduct Authority: FCA Number 460421</p>
-                <p style="margin-top: 1rem;"><strong>Important Risk Warning:</strong> Your home may be repossessed if you fail to keep up payments on your mortgage or any other loans sec
+                <p style="margin-top: 1rem;"><strong>Important Risk Warning:</strong> Your home may be repossessed if you fail to keep up payments on your mortgage or any other loans secured against it.</p>
+                <p style="margin-top: 0.5rem;">© 2026 Liz Wong MPA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
